@@ -100,10 +100,18 @@ a {
   background-color: $green;
 }
 
+/* this is the old version of the buy button
 .buy-tickets {
   position: absolute;
   right: 0;
   margin-top: -429px;
+}
+*/
+
+// this is the test version of the button
+.buy-tickets {
+  float: right;
+  //margin-top: -15px;
 }
 
 // Typography for the blocks
