@@ -1,6 +1,8 @@
 /*
 TODO:
--
+- refactor the big blocks
+- add breakpoints
+- add a more structured layout system
 */
 /* Imports
 ----------------------------------------------------------------------------- */
@@ -361,5 +363,154 @@ table {
 td,
 th {
   padding: 0; }
+
+/* Sections
+----------------------------------------------------------------------------- */
+#the-banner {
+  background-color: #1e00f0; }
+  #the-banner h1, #the-banner h2, #the-banner p {
+    color: #fff; }
+
+#the-slideshow {
+  background-color: #000; }
+  #the-slideshow h1, #the-slideshow h2, #the-slideshow p {
+    color: #fff; }
+
+.attribution {
+  color: #666; }
+
+.title-date {
+  color: #ff6e82; }
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url("../fonts/TiemposTextWeb-Regular.eot");
+  src: url("../fonts/TiemposTextWeb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposTextWeb-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Tiempos';
+  src: url("../fonts/TiemposTextWeb-RegularItalic.eot");
+  src: url("../fonts/TiemposTextWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+html {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-size: 27px; }
+
+/* The basics
+----------------------------------------------------------------------------- */
+h1 {
+  font-family: "futura-pt-condensed", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  letter-spacing: -0.03em;
+  line-height: 4.5rem;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Tiempos", Georgia, Times, Serif;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em; }
+
+p {
+  font-family: "Tiempos", Georgia, Times, Serif;
+  line-height: 1.3rem;
+  letter-spacing: -0.01em;
+  max-width: 850px; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #304cf3;
+  border-bottom: 5px solid #304cf3; }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff6e82;
+    border-bottom: 5px solid #ff6e82; }
+
+.conference-title {
+  font-family: "futura-pt-condensed", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase; }
+
+/* Sections
+----------------------------------------------------------------------------- */
+#the-quote h2 {
+  text-indent: -0.5rem; }
+#the-quote .attribution {
+  margin-left: 1.2rem;
+  text-indent: -1.2rem; }
+#the-quote .attribution-role {
+  font-style: italic; }
+
+/* Blocky chunks
+----------------------------------------------------------------------------- */
+.the-date {
+  position: absolute;
+  display: inline-block;
+  margin-left: 265px;
+  margin-top: -114px;
+  background-color: #14be8c; }
+
+.buy-tickets {
+  position: absolute;
+  right: 0;
+  margin-top: -429px; }
+
+.big-block {
+  padding: 20px 25px 21px 25px;
+  color: #1e00f0;
+  font-family: "futura-pt-condensed", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 2.6rem;
+  text-transform: uppercase; }
+
+a.big-block {
+  display: inline-block;
+  border-bottom: none;
+  background-color: #ff6e82; }
+  a.big-block:hover {
+    background-color: #14be8c; }
+
+/* Generics
+----------------------------------------------------------------------------- */
+h1, h2, p {
+  margin: 0; }
+
+h2 {
+  margin-bottom: 0.4rem; }
+
+p {
+  margin-bottom: 0.7rem; }
+
+/* Sections
+----------------------------------------------------------------------------- */
+#the-quote {
+  padding-top: 205px;
+  padding-bottom: 205px;
+  padding-left: 160px; }
+
+#the-banner {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-left: 40px; }
+  #the-banner .conference-description {
+    padding-top: 160px;
+    margin-left: 120px; }
+
+#the-slideshow {
+  padding-top: 200px;
+  padding-bottom: 260px;
+  padding-left: 160px; }
 
 /*# sourceMappingURL=understanding.css.map */

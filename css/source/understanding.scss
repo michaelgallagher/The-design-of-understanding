@@ -1,6 +1,8 @@
 /*
 TODO:
--
+- refactor the big blocks
+- add breakpoints
+- add a more structured layout system
 */
 
 
@@ -11,11 +13,11 @@ TODO:
 // @import "partials/_defaults";
 // @import "partials/_breakpoints";
 // @import "partials/_utilities";
-// @import "partials/_layout";
-// @import "partials/_colours";
-// @import "partials/_fonts";
-// @import "partials/_typography";
+@import "partials/_colours";
+@import "partials/_fonts";
+@import "partials/_typography";
+@import "partials/_layout";
 // @import "partials/_navigation";
 // @import "partials/_footer";
-// @import "partials/_home";
+@import "partials/_home";
 // @import "partials/_404";
