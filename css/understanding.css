@@ -3,6 +3,7 @@ TODO:
 - refactor the big blocks
 - add breakpoints
 - add a more structured layout system
+- for each breakpoint, set the margin-top of quote-text-box
 */
 /* Imports
 ----------------------------------------------------------------------------- */
@@ -472,6 +473,7 @@ a {
   font-family: "futura-pt-condensed", Helvetica, Arial, Sans-serif;
   font-weight: bold;
   font-size: 3.2rem;
+  letter-spacing: -0.03em;
   line-height: 2.6rem;
   text-transform: uppercase; }
 
@@ -496,9 +498,10 @@ p {
 /* Sections
 ----------------------------------------------------------------------------- */
 #the-quote {
-  padding-top: 205px;
-  padding-bottom: 205px;
   padding-left: 160px; }
+
+#quote-text {
+  margin-top: -102px; }
 
 #the-banner {
   padding-top: 40px;
