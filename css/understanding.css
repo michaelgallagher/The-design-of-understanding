@@ -8,11 +8,6 @@ TODO:
 /* Imports
 ----------------------------------------------------------------------------- */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -365,24 +360,6 @@ td,
 th {
   padding: 0; }
 
-/* Sections
------------------------------------------------------------------------------ */
-#the-banner {
-  background-color: #1e00f0; }
-  #the-banner h1, #the-banner h2, #the-banner p {
-    color: #fff; }
-
-#the-slideshow {
-  background-color: #000; }
-  #the-slideshow h1, #the-slideshow h2, #the-slideshow p {
-    color: #fff; }
-
-.attribution {
-  color: #666; }
-
-.title-date {
-  color: #ff6e82; }
-
 @font-face {
   font-family: 'Tiempos';
   src: url("../fonts/TiemposTextWeb-Regular.eot");
@@ -449,7 +426,8 @@ a {
   text-indent: -0.5rem; }
 #the-quote .attribution {
   margin-left: 1.2rem;
-  text-indent: -1.2rem; }
+  text-indent: -1.2rem;
+  color: #666; }
 #the-quote .attribution-role {
   font-style: italic; }
 
@@ -510,16 +488,24 @@ p {
 
 #the-banner {
   padding-bottom: 80px;
-  padding-left: 40px; }
+  padding-left: 40px;
+  background-color: #1e00f0; }
   #the-banner .conference-title {
     padding-top: 40px; }
   #the-banner .conference-description {
     padding-top: 160px;
     margin-left: 120px; }
+  #the-banner h1, #the-banner h2, #the-banner p {
+    color: #fff; }
+  #the-banner .title-date {
+    color: #ff6e82; }
 
 #the-slideshow {
   padding-top: 200px;
   padding-bottom: 260px;
-  padding-left: 160px; }
+  padding-left: 160px;
+  background-color: #000; }
+  #the-slideshow h1, #the-slideshow h2, #the-slideshow p {
+    color: #fff; }
 
 /*# sourceMappingURL=understanding.css.map */

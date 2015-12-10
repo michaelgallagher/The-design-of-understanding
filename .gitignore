@@ -1,4 +1,6 @@
 
 config.codekit
 
+.codekit-cache/
+
 css/source/.sass-cache/
